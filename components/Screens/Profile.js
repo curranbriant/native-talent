@@ -31,3 +31,18 @@ class Profile extends React.Component {
   }
 }
 export default Profile;
+
+// constructor(props) {
+//     super(props);
+//     this.state = {
+//         player: []
+//     };
+// }
+
+// componentDidMount() {
+//     this.setState({
+//         player: players.find(
+//             player => player.personId === this.props.match.params.personId
+//         )
+//     });
+// }

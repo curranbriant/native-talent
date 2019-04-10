@@ -1,0 +1,14 @@
+{
+  "league": {
+    "standard": [
+      {
+        "name": "Kumar Pratik",
+        "about": "Software Engineer, Designer, Photgrapher, Environmentalist",
+        "skills": "React, React Native, Django, Python, Node, Express, SQL, Git",
+        "rate": "85",
+        "available": "Yes",
+        "image": "https://images.unsplash.com/photo-1521737451536-00a86f630f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+      }
+    ]
+  }
+}
