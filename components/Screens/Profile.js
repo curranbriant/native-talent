@@ -21,8 +21,7 @@ class Profile extends React.Component {
       <View
         style={{
           flex: 1,
-          alignItems: 'center',
-          justifyContent: 'center',
+          backgroundColor: '#0000',
         }}
       >
         <Text>Hey</Text>

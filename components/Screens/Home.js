@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Button } from 'react-native';
+import { ScrollView, Image } from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 import {
   Container,
   Header,
@@ -13,71 +14,160 @@ import {
   Text,
   Card,
   CardItem,
+  Button,
 } from 'native-base';
-import { league } from '/Users/briancurran/personalProjects/nativeProjects/freelanceApp/seed.json';
-const persons = league.standard;
-
 class Home extends React.Component {
   static navigationOptions = {
     header: null,
   };
-  getPersons() {
-    return persons.filter(person => {
-      return person.name;
-    });
-  }
-
   render() {
-    {
-      return this.getPersons().map((person, i) => {
-        return (
-          <Container>
-            <Header />
-            <Content>
-              <Card style={{ flex: 0 }}>
-                <CardItem>
-                  <Left>
-                    <Thumbnail
-                      source={{
-                        uri:
-                          'https://images.unsplash.com/photo-1521737451536-00a86f630f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-                      }}
-                    />
+    return (
+      <ScrollView>
+        <Container
+          style={{
+            //#799BEE
+            //#194CFA
+            alignItems: 'center',
+            height: 120,
+            marginTop: 30,
+          }}
+        >
+          <Text
+            style={{
+              color: '#799BEE',
+              fontSize: 90,
+              fontFamily: 'Helvetica',
+              marginLeft: 20,
+            }}
+          >
+            Hello,
+          </Text>
+          <Text
+            style={{
+              color: '#799BEE',
+              fontSize: 15,
+              fontFamily: 'Helvetica',
+            }}
+          >
+            Hire Freelancers, Make Things Happen.
+          </Text>
+        </Container>
+        <Container
+          style={{
+            height: 400,
+          }}
+        >
+          <Image
+            style={[
+              {
+                height: 500,
+                width: 400,
+                marginTop: 195,
+                marginRight: 200,
+                // Color: '#a0b9f7',
+                position: 'absolute',
+              },
+            ]}
+            source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/bluecircle.png')}
+          />
+          {/* <Image
+            style={[
+              {
+                height: 400,
+                width: 300,
+                marginLeft: 280,
+                position: 'absolute',
+              },
+            ]}
+            source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/standing.png')}
+          /> */}
 
-                    <Body>
-                      <Text>{person.name}</Text>
-                      <Text note>{person.about}</Text>
-                    </Body>
-                  </Left>
-                </CardItem>
-                <CardItem>
-                  {/* <Text
-                    style={{
-                      textDecorationLine: 'underline',
-                    }}
-                  >
-                    Skills
-                  </Text> */}
-                  <Body>
-                    <Text note>{person.skills}</Text>
-                    <Text>Rate: ${person.rate}/hr</Text>
-                    <Text note>Available?: {person.available}</Text>
-                  </Body>
-                </CardItem>
-                <CardItem>
-                  <Right>
-                    <Button
-                      title={'View Profile'}
-                      onPress={() => this.props.navigation.navigate('Home')}
-                    />
-                  </Right>
-                </CardItem>
-              </Card>
-            </Content>
-          </Container>
-        );
-      });
-    }
+          <Image
+            style={[
+              {
+                height: 400,
+                width: 280,
+                marginRight: 200,
+                position: 'absolute',
+              },
+            ]}
+            source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/person.png')}
+          />
+        </Container>
+        <Container
+          style={{
+            justifyContent: 'center',
+            color: '#194CFA',
+            height: 150,
+          }}
+        >
+          <Card>
+            <CardItem
+              header
+              style={{
+                justifyContent: 'center',
+                color: '#194CFA',
+              }}
+            >
+              <Text
+                style={{
+                  color: '#052163',
+                  marginLeft: 10,
+                  marginRight: 10,
+                }}
+              >
+                We work with top software engineers, designers, and data
+                scientists to help startups, businesses, and institutions create
+                digital products.
+              </Text>
+            </CardItem>
+          </Card>
+        </Container>
+        <Container
+          style={{
+            height: 200,
+          }}
+        >
+          <Button
+            block
+            info
+            style={{
+              marginLeft: 40,
+              marginBottom: 20,
+              width: 300,
+            }}
+            onPress={() => this.props.navigation.navigate('FreelancerList')}
+          >
+            <Text>Meet Our Freelancers</Text>
+          </Button>
+          <Button
+            block
+            info
+            style={{
+              marginLeft: 40,
+              marginBottom: 20,
+              width: 300,
+            }}
+            onPress={() => this.props.navigation.navigate('FreelancerList')}
+          >
+            <Text>Become A Freelancer</Text>
+          </Button>
+          <Button
+            block
+            info
+            style={{
+              marginLeft: 40,
+              marginBottom: 20,
+              width: 300,
+            }}
+            onPress={() => this.props.navigation.navigate('FreelancerList')}
+          >
+            <Text>Join The Network</Text>
+          </Button>
+        </Container>
+      </ScrollView>
+    );
   }
 }
+
 export default Home;
