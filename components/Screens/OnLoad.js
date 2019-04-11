@@ -63,6 +63,8 @@ class OnLoad extends React.Component {
             ),
             title: (
               <Button
+                rounded
+                info
                 title={'Go inside, have a look around'}
                 onPress={() => this.props.navigation.navigate('Home')}
               />

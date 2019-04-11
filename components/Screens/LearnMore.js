@@ -16,7 +16,8 @@ import {
   CardItem,
   Button,
 } from 'native-base';
-class Home extends React.Component {
+
+class LearnMore extends React.Component {
   static navigationOptions = {
     header: null,
   };
@@ -28,7 +29,7 @@ class Home extends React.Component {
             //#799BEE
             //#194CFA
             alignItems: 'center',
-            height: 120,
+            height: 150,
             marginTop: 30,
           }}
         >
@@ -37,19 +38,21 @@ class Home extends React.Component {
               color: '#799BEE',
               fontSize: 90,
               fontFamily: 'Helvetica',
-              marginLeft: 20,
+              marginLeft: 10,
             }}
           >
-            Hello,
+            Join
           </Text>
           <Text
             style={{
               color: '#799BEE',
               fontSize: 15,
               fontFamily: 'Helvetica',
+              marginLeft: 90,
+              width: 350,
             }}
           >
-            Hire Freelancers, Make Things Happen.
+            The Best Freelancers Work Everywhere.
           </Text>
         </Container>
         <Container
@@ -60,28 +63,28 @@ class Home extends React.Component {
           <Image
             style={[
               {
-                height: 500,
-                width: 400,
-                marginTop: 195,
-                marginRight: 200,
+                height: 300,
+                width: 300,
+                marginTop: 75,
+                marginRight: 250,
                 // Color: '#a0b9f7',
                 position: 'absolute',
               },
             ]}
             source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/bluecircle.png')}
           />
-          {/* <Image
+          <Image
             style={[
               {
-                height: 400,
-                width: 300,
-                marginLeft: 280,
-                position: 'absolute',
+                height: 50,
+                width: 50,
+                marginTop: 320,
+                marginLeft: 270,
+                // Color: '#a0b9f7',
               },
             ]}
-            source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/standing.png')}
-          /> */}
-
+            source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/solidcircle.png')}
+          />
           <Image
             style={[
               {
@@ -91,14 +94,14 @@ class Home extends React.Component {
                 position: 'absolute',
               },
             ]}
-            source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/person.png')}
+            source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/girl.png')}
           />
         </Container>
         <Container
           style={{
             justifyContent: 'center',
             color: '#194CFA',
-            height: 150,
+            height: 400,
           }}
         >
           <Card>
@@ -116,16 +119,25 @@ class Home extends React.Component {
                   marginRight: 10,
                 }}
               >
-                We work with top software engineers, designers, and data
-                scientists to help startups, businesses, and institutions create
-                digital products.
+                This is freelancers first platfrom. We are a team of tech talent
+                that don't want to be chained to desks. Developers have the
+                right to roam around and work from anywhere. We want to help
+                every developer do tha. What we care about is attracting the
+                most interesting work with the highest budgets for our
+                freelancers to work on. We all have to start somewhere, but for
+                that reason we need the absolute best developers to keep our
+                clients extremely satisfied with the work we do and coming back
+                for me. We have a short application process where we want to see
+                your work and get the chance to know you a little bit! If this
+                sounds like you, fill out the application below and we'll get
+                back to you if we think theres a fit.
               </Text>
             </CardItem>
           </Card>
         </Container>
         <Container
           style={{
-            height: 200,
+            height: 100,
           }}
         >
           <Button
@@ -134,35 +146,12 @@ class Home extends React.Component {
             style={{
               marginLeft: 40,
               marginBottom: 20,
+              marginTop: 20,
               width: 300,
             }}
-            onPress={() => this.props.navigation.navigate('FreelancerList')}
+            onPress={() => this.props.navigation.navigate('Apply')}
           >
-            <Text>Meet Our Freelancers</Text>
-          </Button>
-          <Button
-            block
-            info
-            style={{
-              marginLeft: 40,
-              marginBottom: 20,
-              width: 300,
-            }}
-            onPress={() => this.props.navigation.navigate('LearnMore')}
-          >
-            <Text>Become A Freelancer</Text>
-          </Button>
-          <Button
-            block
-            info
-            style={{
-              marginLeft: 40,
-              marginBottom: 20,
-              width: 300,
-            }}
-            onPress={() => this.props.navigation.navigate('FreelancerList')}
-          >
-            <Text>Join The Network</Text>
+            <Text>Apply Now</Text>
           </Button>
         </Container>
       </ScrollView>
@@ -170,4 +159,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default LearnMore;

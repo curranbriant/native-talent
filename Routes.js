@@ -4,22 +4,27 @@ import FreelancerList from './components/Screens/FreelancerList';
 import FreelancerShow from './components/Screens/FreelancerShow';
 import OnLoad from './components/Screens/OnLoad';
 import Home from './components/Screens/Home';
-import Apply from './components/Screens/Home';
+import Apply from './components/Screens/Apply';
+
+import LearnMore from './components/Screens/LearnMore';
 const Project = createStackNavigator({
   // OnLoad: {
   //   screen: OnLoad,
   // },
-  // // FreelancerShow: {
-  // //   screen: FreelancerShow,
-  // // },
-  Home: {
-    screen: Home,
+  FreelancerShow: {
+    screen: FreelancerShow,
   },
+  // Home: {
+  //   screen: Home,
+  // },
   FreelancerList: {
     screen: FreelancerList,
   },
-  Apply: {
-    screen: Apply,
-  },
+  // Apply: {
+  //   screen: Apply,
+  // },
+  // LearnMore: {
+  //   screen: LearnMore,
+  // },
 });
 export default createAppContainer(Project);
