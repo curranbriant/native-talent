@@ -14,8 +14,8 @@ import {
   Card,
   CardItem,
 } from 'native-base';
-import { league } from '/Users/briancurran/personalProjects/nativeProjects/freelanceApp/seed.json';
-const persons = league.standard;
+import { group } from '/Users/briancurran/personalProjects/nativeProjects/freelanceApp/seed.json';
+const persons = group.flat;
 
 class FreelancerShow extends React.Component {
   render() {

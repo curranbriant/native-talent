@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, SectionList, ScrollView } from 'react-native';
+import { View, Button, SectionList, ScrollView, Image } from 'react-native';
 import {
   Container,
   Header,
@@ -10,12 +10,15 @@ import {
   Body,
   Right,
   Thumbnail,
+  Item,
   Text,
   Card,
   CardItem,
+  Icon,
+  Input,
 } from 'native-base';
-import { league } from '/Users/briancurran/personalProjects/nativeProjects/freelanceApp/seed.json';
-const persons = league.standard;
+import { group } from '/Users/briancurran/personalProjects/nativeProjects/freelanceApp/seed.json';
+const persons = group.flat;
 
 class FreelancerList extends React.Component {
   static navigationOptions = {
@@ -39,16 +42,13 @@ class FreelancerList extends React.Component {
             marginRight: 10,
             borderBottomWidth: 2,
             borderBottomColor: '#3b5998',
+            marginBottom: 10,
+            marginLeft: 10,
           }}
         >
-          <Thumbnail
-            source={{
-              uri:
-                'https://images.unsplash.com/photo-1521737451536-00a86f630f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-            }}
-          />
-          <Text>{person.name}</Text>
-          <Text note>{person.about}</Text>
+          <Thumbnail style={{ marginBottom: 3 }} source={[person.image]} />
+          <Text style={{ fontSize: 20 }}>{person.name}</Text>
+          <Text>{person.about}</Text>
           <Text note>{person.skills}</Text>
           <Text>Rate: ${person.rate}/hr</Text>
           <Text note>Available?: {person.available}</Text>
@@ -66,7 +66,43 @@ class FreelancerList extends React.Component {
         </View>
       );
     });
-    return <ScrollView>{persons}</ScrollView>;
+    return (
+      <ScrollView>
+        <Container
+          style={{
+            //#799BEE
+            //#194CFA
+            alignItems: 'center',
+            height: 170,
+            marginTop: 30,
+            //backgroundColor: '#ccd3e5',
+            marginBottom: 10,
+          }}
+        >
+          <Text
+            style={{
+              color: '#799BEE',
+              fontSize: 90,
+              fontFamily: 'Helvetica',
+            }}
+          >
+            Talent
+          </Text>
+          <Text
+            style={{
+              color: '#799BEE',
+              fontSize: 15,
+              fontFamily: 'Helvetica',
+              width: 250,
+              marginLeft: 30,
+            }}
+          >
+            The Best Of The Best. I'm talking Jordan Game 6 Level Of Talent.
+          </Text>
+        </Container>
+        {persons}
+      </ScrollView>
+    );
   }
 }
 export default FreelancerList;
