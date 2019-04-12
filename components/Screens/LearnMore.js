@@ -30,7 +30,7 @@ class LearnMore extends React.Component {
             //#194CFA
             alignItems: 'center',
             height: 150,
-            marginTop: 30,
+            marginTop: 20,
           }}
         >
           <Text
@@ -101,7 +101,7 @@ class LearnMore extends React.Component {
           style={{
             justifyContent: 'center',
             color: '#194CFA',
-            height: 400,
+            height: 200,
           }}
         >
           <Card>
@@ -119,18 +119,10 @@ class LearnMore extends React.Component {
                   marginRight: 10,
                 }}
               >
-                This is a freelancers first platfrom. We are a team of tech
-                talent that don't want to be chained to desks. Developers have
-                the right to roam around and work from anywhere. We want to help
-                every developer do tha. What we care about is attracting the
-                most interesting work with the highest budgets for our
-                freelancers to work on. We all have to start somewhere, but for
-                that reason we need the absolute best developers to keep our
-                clients extremely satisfied with the work we do and coming back
-                for me. We have a short application process where we want to see
-                your work and get the chance to know you a little bit! If this
-                sounds like you, fill out the application below and we'll get
-                back to you if we think theres a fit.
+                This is a freelancers first platfrom. We want to work with the
+                best developers and designers to do awesome work. If you want to
+                join our network of elite talent, fill out the application below
+                and we'll reach out to you if we feel there's a fit.
               </Text>
             </CardItem>
           </Card>

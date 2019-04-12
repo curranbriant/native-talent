@@ -30,21 +30,39 @@ class Learn extends React.Component {
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label>Skills</Label>
+              <Label>Skills/Languages/Technologies</Label>
               <Input />
             </Item>
             <Item floatingLabel>
-              <Label>Rate ($/hr)</Label>
+              <Label>LinkedIn</Label>
               <Input />
             </Item>
-            <Content padder>
-              <Form>
-                <Textarea rowSpan={2} bordered placeholder='Short Bio' />
-              </Form>
-            </Content>
+            <Item floatingLabel>
+              <Label>Portfolio</Label>
+              <Input />
+              <Item floatingLabel>
+                <Label>Other Media</Label>
+                <Input />
+              </Item>
+              <Content padder>
+                <Form>
+                  <Textarea
+                    rowSpan={2}
+                    bordered
+                    placeholder='Tell us about you'
+                  />
+                </Form>
+              </Content>
+            </Item>
           </Form>
           <Button
             block
+            info
+            style={{
+              width: 300,
+              marginLeft: 40,
+              marginTop: 10,
+            }}
             onPress={() => this.props.navigation.navigate('Success')}
           >
             <Text>Submit</Text>

@@ -60,13 +60,14 @@ class FreelancerList extends React.Component {
           <Text>{person.about}</Text>
           <Text note>{person.skills}</Text>
           <Text>Rate: ${person.rate}/hr</Text>
-          <Text note>Available?: {person.available}</Text>
+          <Text note>Accepting New Work?: {person.available}</Text>
           <Right>
             <Button
-              // block
-              // info
+              hasText
+              transparent
               style={{
-                marginBottom: 20,
+                marginBottom: 15,
+                marginTop: 10,
               }}
               onPress={() =>
                 this.props.navigation.navigate('FreelancerShow', {
@@ -74,7 +75,13 @@ class FreelancerList extends React.Component {
                 })
               }
             >
-              <Text>View Profile</Text>
+              <Text
+                style={{
+                  fontSize: 20,
+                }}
+              >
+                View Profile
+              </Text>
             </Button>
           </Right>
         </View>
@@ -111,7 +118,8 @@ class FreelancerList extends React.Component {
               marginLeft: 30,
             }}
           >
-            The Best Of The Best. I'm talking Jordan Game 6 Level Of Talent.
+            The Best Of The Best.
+            {/* The Best Of The Best. I'm talking Jordan Game 6 Level Of Talent. */}
           </Text>
         </Container>
         {persons}

@@ -13,7 +13,7 @@ import {
   Text,
 } from 'native-base';
 
-class Success extends React.Component {
+class SignInSuccess extends React.Component {
   static navigationOptions = {
     header: null,
   };
@@ -43,7 +43,7 @@ class Success extends React.Component {
               marginLeft: 20,
             }}
           >
-            Thanks for submitting an application!
+            Welcome!
           </Text>
           <Button
             light
@@ -61,4 +61,4 @@ class Success extends React.Component {
     );
   }
 }
-export default Success;
+export default SignInSuccess;

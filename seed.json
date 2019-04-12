@@ -50,6 +50,36 @@
         "image": "https://images.unsplash.com/photo-1520347781254-4ce0db5e03a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
         "id": 14,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
+      },
+      {
+        "name": "John George",
+        "about": "I make apps",
+        "skills": "React, React Native",
+        "rate": "105",
+        "available": "Yes",
+        "image": "https://images.unsplash.com/photo-1534491089148-7a0f3dc3c20e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=358&q=80",
+        "id": 15,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
+      },
+      {
+        "name": "Steven Bryant",
+        "about": "Junior Developer",
+        "skills": "FrontEnd/BackEnd",
+        "rate": "65",
+        "available": "Yes",
+        "image": "https://images.unsplash.com/photo-1524749292158-7540c2494485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+        "id": 16,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
+      },
+      {
+        "name": "K.C. Ross",
+        "about": "Designer.  Plant Friend",
+        "skills": "FrontEnd/BackEnd",
+        "rate": "105",
+        "available": "Yes",
+        "image": "https://images.unsplash.com/photo-1533938151665-eb8e39403584?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+        "id": 17,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
       }
     ]
   }

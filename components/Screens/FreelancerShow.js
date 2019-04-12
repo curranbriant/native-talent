@@ -27,19 +27,18 @@ class FreelancerShow extends React.Component {
     let person = this.props.navigation.state.params.person;
     return (
       <ScrollView>
-        <Container>
+        <Container style={{}}>
+          {/* backgroundColor: '#7b8189' */}
           <Grid>
             <Col
               style={{
-                // width: 200,
-                // marginLeft: 100,
-                //justifyContent: 'center',
                 alignContent: 'center',
               }}
             >
               <Row
                 style={{
                   height: 100,
+                  backgroundColor: '#799BEE',
                 }}
               >
                 <Thumbnail
@@ -53,7 +52,15 @@ class FreelancerShow extends React.Component {
                   }}
                   source={[person.image]}
                 />
-                <Text style={{ fontSize: 30, marginTop: 30, marginLeft: 15 }}>
+                <Text
+                  style={{
+                    fontSize: 30,
+                    marginTop: 40,
+                    marginLeft: 15,
+                    fontFamily: 'Helvetica',
+                    color: 'white',
+                  }}
+                >
                   {person.name}
                 </Text>
               </Row>
@@ -64,7 +71,7 @@ class FreelancerShow extends React.Component {
                   marginLeft: 10,
                 }}
               >
-                <Text style={{}}>{person.about}</Text>
+                <Text style={{ fontFamily: 'Helvetica' }}>{person.about}</Text>
               </Row>
               <Row
                 style={{
@@ -76,6 +83,7 @@ class FreelancerShow extends React.Component {
                   style={{
                     fontSize: 30,
                     textDecorationLine: 'underline',
+                    fontFamily: 'Helvetica',
                   }}
                 >
                   Skills
@@ -87,7 +95,7 @@ class FreelancerShow extends React.Component {
                   marginLeft: 10,
                 }}
               >
-                <Text>{person.skills}</Text>
+                <Text style={{ fontFamily: 'Helvetica' }}>{person.skills}</Text>
               </Row>
               <Row
                 style={{
@@ -99,6 +107,7 @@ class FreelancerShow extends React.Component {
                   style={{
                     fontSize: 30,
                     textDecorationLine: 'underline',
+                    fontFamily: 'Helvetica',
                   }}
                 >
                   About Me
@@ -110,9 +119,9 @@ class FreelancerShow extends React.Component {
                   marginLeft: 10,
                 }}
               >
-                <Text>{person.bio}</Text>
+                <Text style={{ fontFamily: 'Helvetica' }}>{person.bio}</Text>
               </Row>
-              <Button bordered style={{ marginBottom: 10 }}>
+              <Button bordered style={{ marginBottom: 10, marginLeft: 10 }}>
                 <Text>Contact</Text>
               </Button>
             </Col>

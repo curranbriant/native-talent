@@ -146,9 +146,9 @@ class Home extends React.Component {
               marginBottom: 20,
               width: 300,
             }}
-            onPress={() => this.props.navigation.navigate('About')}
+            onPress={() => this.props.navigation.navigate('SignUp')}
           >
-            <Text>About</Text>
+            <Text>Login/Sign-Up</Text>
           </Button>
         </Container>
       </ScrollView>
