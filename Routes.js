@@ -11,12 +11,12 @@ import SignUp from './components/Screens/SignUp';
 import SignUp2 from './components/Screens/SignUp2';
 import SignInSuccess from './components/Screens/SignInSuccess';
 const Project = createStackNavigator({
-  // OnLoad: {
-  //   screen: OnLoad,
-  // },
-  // Home: {
-  //   screen: Home,
-  // },
+  OnLoad: {
+    screen: OnLoad,
+  },
+  Home: {
+    screen: Home,
+  },
   FreelancerList: {
     screen: FreelancerList,
   },
