@@ -119,9 +119,9 @@ class LearnMore extends React.Component {
                   marginRight: 10,
                 }}
               >
-                This is freelancers first platfrom. We are a team of tech talent
-                that don't want to be chained to desks. Developers have the
-                right to roam around and work from anywhere. We want to help
+                This is a freelancers first platfrom. We are a team of tech
+                talent that don't want to be chained to desks. Developers have
+                the right to roam around and work from anywhere. We want to help
                 every developer do tha. What we care about is attracting the
                 most interesting work with the highest budgets for our
                 freelancers to work on. We all have to start somewhere, but for

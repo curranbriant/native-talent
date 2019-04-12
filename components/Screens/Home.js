@@ -148,7 +148,7 @@ class Home extends React.Component {
               marginBottom: 20,
               width: 300,
             }}
-            onPress={() => this.props.navigation.navigate('LearnMore')}
+            onPress={() => this.props.navigation.navigate('FreelancerList')}
           >
             <Text>Become A Freelancer</Text>
           </Button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, SectionList, ScrollView, Image } from 'react-native';
+import { View, SectionList, ScrollView, Image } from 'react-native';
 import {
   Container,
   Header,
@@ -16,6 +16,7 @@ import {
   CardItem,
   Icon,
   Input,
+  Button,
 } from 'native-base';
 import { group } from '/Users/briancurran/personalProjects/nativeProjects/freelanceApp/seed.json';
 const persons = group.flat;
@@ -24,6 +25,11 @@ class FreelancerList extends React.Component {
   static navigationOptions = {
     header: null,
   };
+  constructor(props) {
+    super(props);
+
+    this.getPersons = this.getPersons.bind(this);
+  }
   getPersons() {
     return persons.filter(person => {
       return person;
@@ -54,14 +60,19 @@ class FreelancerList extends React.Component {
           <Text note>Available?: {person.available}</Text>
           <Right>
             <Button
-              title={'View Profile'}
-              key={id}
+              // block
+              // info
+              style={{
+                 marginBottom: 20,
+              }}
               onPress={() =>
                 this.props.navigation.navigate('FreelancerShow', {
-                  personId: `${person.id}`,
+                  person,
                 })
               }
-            />
+            >
+              <Text>View Profile</Text>
+            </Button>
           </Right>
         </View>
       );

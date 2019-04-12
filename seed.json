@@ -8,7 +8,8 @@
         "rate": "85",
         "available": "Yes",
         "image": "https://images.unsplash.com/photo-1521737451536-00a86f630f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "id": 10
+        "id": 10,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
       },
       {
         "name": "Murat Pak",
@@ -17,7 +18,8 @@
         "rate": "125",
         "available": "Yes",
         "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-        "id": 11
+        "id": 11,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
       },
       {
         "name": "Josh Patterson",
@@ -26,7 +28,8 @@
         "rate": "55",
         "available": "Yes",
         "image": "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80",
-        "id": 12
+        "id": 12,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
       },
       {
         "name": "Kate Jefferies",
@@ -35,7 +38,8 @@
         "rate": "125",
         "available": "Yes",
         "image": "https://images.unsplash.com/photo-1550682290-d071c75759f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-        "id": 13
+        "id": 13,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
       },
       {
         "name": "Chris Stanely",
@@ -44,7 +48,8 @@
         "rate": "150",
         "available": "Yes",
         "image": "https://images.unsplash.com/photo-1520347781254-4ce0db5e03a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-        "id": 14
+        "id": 14,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in turpis eu neque accumsan posuere. Aenean ut ante tempus, auctor turpis sit amet, tempor diam. Vestibulum convallis tortor vel velit vehicula pretium. Integer pulvinar nibh nibh, ac accumsan nunc posuere sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; "
       }
     ]
   }

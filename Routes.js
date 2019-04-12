@@ -11,20 +11,20 @@ const Project = createStackNavigator({
   // OnLoad: {
   //   screen: OnLoad,
   // },
-  FreelancerShow: {
-    screen: FreelancerShow,
-  },
   // Home: {
   //   screen: Home,
   // },
   FreelancerList: {
     screen: FreelancerList,
   },
-  // Apply: {
-  //   screen: Apply,
-  // },
+  FreelancerShow: {
+    screen: FreelancerShow,
+  },
   // LearnMore: {
   //   screen: LearnMore,
+  // },
+  // Apply: {
+  //   screen: Apply,
   // },
 });
 export default createAppContainer(Project);
