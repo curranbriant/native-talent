@@ -2,6 +2,10 @@ import React from 'react';
 import { ScrollView, Image } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { Container, Text, Card, CardItem, Button } from 'native-base';
+//Color Palette Used Throughout
+//#799BEE babyblue
+//#194CFA darker blue
+//'#a0b9f7' off white
 class Home extends React.Component {
   static navigationOptions = {
     header: null,
@@ -11,8 +15,6 @@ class Home extends React.Component {
       <ScrollView>
         <Container
           style={{
-            //#799BEE
-            //#194CFA
             alignItems: 'center',
             height: 120,
             marginTop: 30,
@@ -50,24 +52,11 @@ class Home extends React.Component {
                 width: 400,
                 marginTop: 195,
                 marginRight: 200,
-                // Color: '#a0b9f7',
                 position: 'absolute',
               },
             ]}
             source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/bluecircle.png')}
           />
-          {/* <Image
-            style={[
-              {
-                height: 400,
-                width: 300,
-                marginLeft: 280,
-                position: 'absolute',
-              },
-            ]}
-            source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/standing.png')}
-          /> */}
-
           <Image
             style={[
               {

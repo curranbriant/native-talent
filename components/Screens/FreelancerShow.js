@@ -1,21 +1,6 @@
 import React from 'react';
-import { View, SectionList, ScrollView } from 'react-native';
-import {
-  Container,
-  Header,
-  Content,
-  List,
-  ListItem,
-  Left,
-  Body,
-  Right,
-  Thumbnail,
-  Image,
-  Text,
-  Card,
-  CardItem,
-  Button,
-} from 'native-base';
+import { ScrollView } from 'react-native';
+import { Container, Thumbnail, Text, Button } from 'native-base';
 import { group } from '/Users/briancurran/personalProjects/nativeProjects/freelanceApp/seed.json';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 const persons = group.flat;
@@ -28,7 +13,6 @@ class FreelancerShow extends React.Component {
     return (
       <ScrollView>
         <Container style={{}}>
-          {/* backgroundColor: '#7b8189' */}
           <Grid>
             <Col
               style={{

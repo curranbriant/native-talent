@@ -7,8 +7,6 @@ import {
   Item,
   Input,
   Label,
-  Picker,
-  Icon,
   Button,
   Text,
 } from 'native-base';

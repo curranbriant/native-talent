@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, Image } from 'react-native';
-import {
-  Button,
-  Container,
-  Header,
-  Content,
-  Form,
-  Item,
-  Input,
-  Textarea,
-  Label,
-  Text,
-} from 'native-base';
+import { Button, Container, Text } from 'native-base';
 
 class Success extends React.Component {
   static navigationOptions = {

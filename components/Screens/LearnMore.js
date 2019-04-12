@@ -1,21 +1,7 @@
 import React from 'react';
 import { ScrollView, Image } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import {
-  Container,
-  Header,
-  Content,
-  List,
-  ListItem,
-  Left,
-  Body,
-  Right,
-  Thumbnail,
-  Text,
-  Card,
-  CardItem,
-  Button,
-} from 'native-base';
+import { Container, Text, Card, CardItem, Button } from 'native-base';
 
 class LearnMore extends React.Component {
   static navigationOptions = {
@@ -26,8 +12,6 @@ class LearnMore extends React.Component {
       <ScrollView>
         <Container
           style={{
-            //#799BEE
-            //#194CFA
             alignItems: 'center',
             height: 150,
             marginTop: 20,
@@ -67,7 +51,6 @@ class LearnMore extends React.Component {
                 width: 300,
                 marginTop: 75,
                 marginRight: 250,
-                // Color: '#a0b9f7',
                 position: 'absolute',
               },
             ]}
@@ -80,7 +63,6 @@ class LearnMore extends React.Component {
                 width: 50,
                 marginTop: 320,
                 marginLeft: 270,
-                // Color: '#a0b9f7',
               },
             ]}
             source={require('/Users/briancurran/personalProjects/nativeProjects/freelanceApp/components/images/solidcircle.png')}
