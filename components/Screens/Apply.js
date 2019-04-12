@@ -43,7 +43,10 @@ class Learn extends React.Component {
               </Form>
             </Content>
           </Form>
-          <Button block>
+          <Button
+            block
+            onPress={() => this.props.navigation.navigate('Success')}
+          >
             <Text>Submit</Text>
           </Button>
         </Content>

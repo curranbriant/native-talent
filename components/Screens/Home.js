@@ -1,21 +1,7 @@
 import React from 'react';
 import { ScrollView, Image } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import {
-  Container,
-  Header,
-  Content,
-  List,
-  ListItem,
-  Left,
-  Body,
-  Right,
-  Thumbnail,
-  Text,
-  Card,
-  CardItem,
-  Button,
-} from 'native-base';
+import { Container, Text, Card, CardItem, Button } from 'native-base';
 class Home extends React.Component {
   static navigationOptions = {
     header: null,
@@ -148,7 +134,7 @@ class Home extends React.Component {
               marginBottom: 20,
               width: 300,
             }}
-            onPress={() => this.props.navigation.navigate('FreelancerList')}
+            onPress={() => this.props.navigation.navigate('LearnMore')}
           >
             <Text>Become A Freelancer</Text>
           </Button>
@@ -160,9 +146,9 @@ class Home extends React.Component {
               marginBottom: 20,
               width: 300,
             }}
-            onPress={() => this.props.navigation.navigate('FreelancerList')}
+            onPress={() => this.props.navigation.navigate('About')}
           >
-            <Text>Join The Network</Text>
+            <Text>About</Text>
           </Button>
         </Container>
       </ScrollView>

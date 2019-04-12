@@ -1,5 +1,11 @@
 import React from 'react';
-import { View, SectionList, ScrollView, Image } from 'react-native';
+import {
+  View,
+  SectionList,
+  ScrollView,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
 import {
   Container,
   Header,
@@ -18,6 +24,7 @@ import {
   Input,
   Button,
 } from 'native-base';
+import SearchBar from 'react-native-searchbar';
 import { group } from '/Users/briancurran/personalProjects/nativeProjects/freelanceApp/seed.json';
 const persons = group.flat;
 
@@ -25,11 +32,7 @@ class FreelancerList extends React.Component {
   static navigationOptions = {
     header: null,
   };
-  constructor(props) {
-    super(props);
 
-    this.getPersons = this.getPersons.bind(this);
-  }
   getPersons() {
     return persons.filter(person => {
       return person;
@@ -63,7 +66,7 @@ class FreelancerList extends React.Component {
               // block
               // info
               style={{
-                 marginBottom: 20,
+                marginBottom: 20,
               }}
               onPress={() =>
                 this.props.navigation.navigate('FreelancerShow', {
